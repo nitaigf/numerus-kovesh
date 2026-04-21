@@ -55,7 +55,7 @@ Essa tabela é a base do sistema :contentReference[oaicite:0]{index=0}
 - Converter para uppercase
 
 Exemplo:
-"Nitai Embrás" → "NITAIEMBRAS"
+"Nitai Garcia Fernandes" → "NITAIGARCIAFERNANDES"
 
 ---
 
