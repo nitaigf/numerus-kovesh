@@ -1,0 +1,8 @@
+[submodule "numerus-kovesh-api"]
+	path = numerus-kovesh-api
+	url = git@github.com:nitaigf/numerus-kovesh-api.git
+	branch = .
+[submodule "numerus-kovesh-web"]
+	path = numerus-kovesh-web
+	url = git@github.com:nitaigf/numerus-kovesh-web.git
+	branch = .

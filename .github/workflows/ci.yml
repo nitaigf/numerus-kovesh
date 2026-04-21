@@ -1,0 +1,28 @@
+name: parent-ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate required files
+        run: |
+          test -f .gitmodules
+          test -f docker-compose.yml
+          test -f contracts/http-contract.md
+          test -f contracts/environment-contract.md
+          test -f contracts/release-compatibility.md
+          test -f docs/GIT_FLOW.md
+
+      - name: Validate branch alignment in gitmodules
+        run: |
+          grep -q "branch = ." .gitmodules
+
+      - name: Validate docker compose
+        run: docker compose config
